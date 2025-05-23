@@ -10,6 +10,7 @@ import SpecialReasons from './SpecialReasons';
 import DigitalGift from './DigitalGift';
 import StarryNight from './StarryNight';
 import TreasureHunt from './TreasureHunt';
+import CarDanceMemory from "./CarDanceMemory";
 
 export default function MagicalGate() {
   const [opened, setOpened] = useState(false);
@@ -88,6 +89,7 @@ export default function MagicalGate() {
       <Flipbook />
       <FriendshipTimeline />
       <MemoryGallery />
+      <CarDanceMemory />
       <BirthdayVideo />
       <SpecialReasons />
       <DigitalGift />

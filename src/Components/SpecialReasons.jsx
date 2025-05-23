@@ -3,13 +3,27 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useSwipeable } from "react-swipeable";
 
 const reasons = [
-  { text: "Your laughter is contagious", emoji: "😄" },
-  { text: "You stood by me when no one else did", emoji: "🫶" },
-  { text: "Your creativity always inspires me", emoji: "🎨" },
-  { text: "You make even the dullest day fun", emoji: "☀️" },
-  { text: "You believe in me more than I do", emoji: "💪" },
-  { text: "You're the best listener ever", emoji: "🎧" },
-  { text: "You're simply irreplaceable", emoji: "❤️" },
+  {
+    text: "😄 Your laughter is contagious — it's the kind that echoes long after the moment is gone. You light up every room just by being in it.",
+  },
+  {
+    text: "🫶 You stood by me when no one else did — in my darkest days, you were the light I didn’t know I needed. That loyalty is priceless.",
+  },
+  {
+    text: "🎨 Your creativity always inspires me — whether it's in your art, your ideas, or just the way you see the world, it makes life more colorful.",
+  },
+  {
+    text: "☀️ You make even the dullest day fun — with your jokes, silly ideas, and that infectious energy, you turn ordinary into unforgettable.",
+  },
+  {
+    text: "💪 You believe in me more than I do — your faith in me has pushed me through moments I thought I couldn’t survive. You’re my quiet strength.",
+  },
+  {
+    text: "🎧 You're the best listener ever — not just hearing my words, but understanding the silence between them. You’ve always made me feel heard.",
+  },
+  {
+    text: "❤️ You're simply irreplaceable — no one makes me laugh, feel, think, or grow the way you do. There’s only one YOU in the world, and I’m lucky to have you.",
+  },
 ];
 
 export default function SpecialReasons() {

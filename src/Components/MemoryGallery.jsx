@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import { Video } from "yet-another-react-lightbox/plugins";
-import "yet-another-react-lightbox/styles.css";
+import Video from "yet-another-react-lightbox/plugins/video";
+
 
 
 const memories = [
@@ -37,6 +37,32 @@ const memories = [
   {
     src: "/videos/memory6.mp4",
     caption: "This one’s still hilarious 😂",
+    type: "video",
+    poster: "/images/memory17.jpg",
+  },
+  {
+    src: "/images/memory15.jpg",
+    caption: "The foggy window where you drew a smiley and wrote my name ❄️😊",
+    type: "image"
+  },
+  {
+    src: "/images/memory12.jpg",
+    caption: `"Together Since 2018" — The hoodies that captured our promise 👕❤️`,
+    type: "image"
+  },
+  {
+    src: "/images/memory13.jpg",
+    caption: "Dinner on the Activa — misunderstanding turned into a memory 💫",
+    type: "image"
+  },
+  {
+    src: "/images/memory14.jpg",
+    caption: "One bowl of Maggi, one giant scoop of love 🍜💛",
+    type: "image"
+  },
+  {
+    src: "/videos/memory1.mp4",
+    caption: "Fulfilling your dream — birthday cake on the highway 🎂🌌",
     type: "video",
     poster: "/images/memory17.jpg",
   },
@@ -96,6 +122,29 @@ export default function MemoryGallery() {
   }))}
   plugins={[Video]}
 /> */}
+<Lightbox
+  open={openIndex >= 0}
+  close={() => setOpenIndex(-1)}
+  index={openIndex}
+  slides={memories.map((m) =>
+    m.type === "video"
+      ? {
+          type: "video",
+          sources: [
+            {
+              src: m.src,
+              type: "video/mp4",
+            },
+          ],
+        }
+      : {
+          src: m.src,
+          type: "image",
+        }
+  )}
+  plugins={[Video]}
+/>
+
 
     </div>
   );

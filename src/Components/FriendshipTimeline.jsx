@@ -2,119 +2,85 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaHeart, FaStar } from "react-icons/fa";
 
-const timeline = [
-  {
-    year: 2017,
-    memory: "The year we met – innocent talks turned into unforgettable laughs. ❤️",
-    image: "/images/memory1.jpg",
-  },
-  {
-    year: 2018,
-    memory: "First silly selfie and endless late-night chats. 🌙",
-    image: "/images/memory2.jpg",
-  },
-  {
-    year: 2019,
-    memory: "Our crazy adventure to [place] – still laughing about it! 😂",
-    image: "/images/memory3.jpg",
-  },
-  {
-    year: 2020,
-    memory: "Even lockdown couldn't stop our bond from growing. 💪",
-    image: "/images/memory4.jpg",
-  },
-  {
-    year: 2021,
-    memory: "You were there in my ups and downs — thank you for that. 🫶",
-    image: "/images/memory5.jpg",
-  },
-  {
-    year: 2022,
-    memory: "Birthday gifts, secret notes, and a stronger friendship. 🎁",
-    image: "/images/memory6.jpg",
-  },
-  {
-    year: 2023,
-    memory: "Every moment was more magical than the last. ✨",
-    image: "/images/memory7.jpg",
-  },
-  {
-    year: 2024,
-    memory: "7 years strong! Here's to many more years of madness. 🥂",
-    image: "/images/memory8.jpg",
-  },
-  {
-    year: 2025,
-    memory: "This year, I built this site — just for you. Happy Birthday! 💻🎂",
-    image: "/images/memory9.jpg",
-  },
-];
-
 export default function FriendshipTimeline() {
-  const [index, setIndex] = useState(0);
-  const current = timeline[index];
-
-  const handleNext = () => {
-    setIndex((prev) => (prev + 1) % timeline.length);
-  };
-
-  const handlePrev = () => {
-    setIndex((prev) => (prev - 1 + timeline.length) % timeline.length);
-  };
+  
 
   return (
     <>
-      
-    <div className="relative min-h-[600px] bg-gradient-to-br from-white to-pink-50 py-16 px-6 text-center">
-      <h2 className="text-4xl font-bold text-purple-700 mb-10">📖 Friendship Timeline</h2>
+    <section className="py-16 px-6 bg-yellow-50 text-center">
+  <h2 className="text-3xl md:text-4xl font-bold text-pink-600 mb-6">🎉 Two Birthdays, One Bond</h2>
+  <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-10">
+    The past two years, we didn’t just cut cakes — we created memories that still make me smile.
+    From surprise plans to quiet moments, each birthday became a chapter in our story.
+  </p>
 
-      <div className="relative z-10 max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-6 text-center">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -30 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h3 className="text-2xl font-semibold text-pink-500 mb-2">
-              {current.year}
-            </h3>
-            <p className="text-gray-700 text-lg mb-4">{current.memory}</p>
-            <img
-              src={current.image}
-              alt={`memory-${current.year}`}
-              className="w-full h-64 object-cover rounded-lg mx-auto shadow"
-            />
-            <motion.div
-              key={`icon-${index}`}
-              initial={{ scale: 0 }}
-              animate={{ scale: 1.2 }}
-              transition={{ delay: 0.5, duration: 0.5, type: "spring" }}
-              className="mt-4 text-pink-400 text-2xl flex justify-center gap-4"
-            >
-              <FaHeart />
-              <FaStar />
-            </motion.div>
-          </motion.div>
-        </AnimatePresence>
+  <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+  {/* Birthday 2023 */}
+  <div className="bg-white rounded-lg shadow p-4 w-full overflow-hidden">
+    <img
+      src="/images/memory17.jpg"
+      alt="Birthday 2023"
+      className="rounded-lg mb-4 w-full h-[50%] object-cover"
+    />
+    <h3 className="text-xl font-semibold text-pink-500">🎈 Birthday 2023</h3>
+    <p className="text-gray-600 mt-2 italic">
+      The day we laughed too much, clicked blurry selfies, and proved once again that the best gifts are moments — not things. Because in those silly, unfiltered snapshots and endless giggles, we found the kind of happiness no gift box could ever hold. It was a reminder that the real magic isn’t in the celebration itself, but in the company we keep and the memories we make together — messy, beautiful, and forever ours.
+    </p>
+  </div>
 
-        <div className="flex justify-center gap-6 mt-8">
-          <button
-            onClick={handlePrev}
-            className="bg-pink-300 hover:bg-pink-400 text-white font-bold px-4 py-2 rounded"
-          >
-            ⬅ Previous
-          </button>
-          <button
-            onClick={handleNext}
-            className="bg-purple-500 hover:bg-purple-600 text-white font-bold px-4 py-2 rounded"
-          >
-            Next ➡
-          </button>
-        </div>
-      </div>
-    </div>
+  {/* Birthday 2024 */}
+  <div className="bg-white rounded-lg shadow p-4 w-full overflow-hidden">
+    <img
+      src="/images/memory1.jpg"
+      alt="Birthday 2024"
+      className="rounded-lg mb-4 w-full h-[50%] object-cover"
+    />
+    <h3 className="text-xl font-semibold text-pink-500">🎁 Birthday 2024</h3>
+    <p className="text-gray-600 mt-2 italic">
+      Under city lights and quiet smiles, we celebrated not just your birthday — but everything we’ve been through together. Each laugh we shared that night carried the weight of years of memories, and every glance held stories only we could understand. It wasn’t just a celebration of another year — it was a silent thank you for all the little moments, all the times we held each other up, and all the love that’s grown between us in ways words could never fully explain.
+    </p>
+  </div>
+</div>
+
+
+  {/* Optional: Add a short video montage */}
+  <div className="mt-12">
+    <h4 className="text-2xl font-semibold text-pink-500 mb-4">📽️ Flashback Moments</h4>
+    <video
+      controls
+      className="rounded-lg mx-auto w-full max-w-3xl"
+      poster="/images/memory1.jpg"
+    >
+      <source src="/videos/memory3.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+<div className="bg-white rounded-lg shadow p-4 mt-8 max-w-3xl mx-auto text-center">
+  <h3 className="text-xl font-semibold text-yellow-500 mb-2">🎁 My Gifts to Her vs Her Gifts to Me 😅</h3>
+  
+  <p className="text-gray-700 italic">
+    Anklet? Bought it. <br />
+    Bracelet? Picked the prettiest one. <br />
+    Watch? Wrapped it with a note and a whole lot of love. 💝<br /><br />
+
+    And what did I get in return? Hmm... maybe a “thank you”... or a late reply 😆<br />
+    But hey, your smile was totally worth it (I guess). 🤷‍♂️💖<br /><br />
+
+    Drumroll please... <strong>*Absolutely nothing!* 😭</strong><br />
+    But that “Aww thank you yaar” was the highlight of my whole month! 😂
+  </p>
+
+  <div className="mt-5 flex justify-center gap-4 flex-wrap">
+    <div className="bg-pink-100 text-pink-800 p-3 rounded shadow text-sm">👣 Anklet</div>
+    <div className="bg-purple-100 text-purple-800 p-3 rounded shadow text-sm">⌚ Watch</div>
+    <div className="bg-blue-100 text-blue-800 p-3 rounded shadow text-sm">💫 Bracelet</div>
+  </div>
+
+  <p className="text-gray-500 mt-4 text-sm"><strong>Still waiting for my return gift... maybe next year? 😌🎀</strong></p>
+</div>
+
+
     </>
   );
 }

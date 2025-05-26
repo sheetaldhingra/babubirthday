@@ -9,7 +9,7 @@ import Video from "yet-another-react-lightbox/plugins/video";
 const memories = [
   {
     src: "/images/memory2.jpg",
-    caption: "Our very first selfie 😄 (2017)",
+    caption: "Our very first selfie 😄 (2021)",
     type: "image"
   },
   {

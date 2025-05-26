@@ -7,7 +7,7 @@ const CLUES = [
   { id: 3, text: "You always stood by me.", x: "50%", y: "70%" },
 ];
 
-const finalMessage = `To the one who made my life better since 2017 — this journey, these memories, and this website… it's all for you. 💌`;
+const finalMessage = `To the one who made my life better since 2018 — this journey, these memories, and this website… it's all for you. 💌`;
 
 const sound = new Howl({
   src: ["/audio/voice-message.mp3"], // Optional: add your voice message here

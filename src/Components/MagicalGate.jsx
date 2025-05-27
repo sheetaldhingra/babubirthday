@@ -70,7 +70,7 @@ export default function MagicalGate() {
       Happy Birthday, BHARTI❤️! 🎉
     </h1>
     <p className="text-base sm:text-lg md:text-2xl text-gray-700 max-w-sm sm:max-w-md md:max-w-xl">
-      8 years of laughter, inside jokes, and beautiful memories — here's to the next chapter!
+      7 years of laughter, inside jokes, and beautiful memories — here's to the next chapter!
     </p>
   </motion.div>
 </section>

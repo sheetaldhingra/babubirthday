@@ -19,6 +19,10 @@ const pages = [
     video: "/videos/memory1.mp4",
   },
   {
+    message: "Remember when you sneakily snatched my watch like it was national treasure? 😏 Wore it proudly like “this is mine now”, flashing that mischievous smile — fully knowing I wouldn’t win that argument. I begged. I sulked. I even tried emotional blackmail (don’t lie, you saw it 😤). But no… your wrist had claimed it. So what did I do? Like a true gentleman (and a defeated one), I gifted you a brand-new watch on your birthday. 🎁⌚ And just like magic — poof! — mine came back to me. So basically… I had to buy my own watch’s freedom. 😆 Smooth move, Miss Watch Thief! 💛",
+    video: "/videos/memory10.mp4",
+  },
+  {
     message: "Here’s to many more years of unforgettable moments together! 🥂",
     image: "/images/memory11.jpg",
   },

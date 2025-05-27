@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const cards = [
   {
-    message: "Wishing you a day filled with joy, a heart full of laughter, and a life overflowing with love — not just today, but every single day. 💖 You deserve all the happiness in the world, and I hope this birthday marks the beginning of yet another amazing chapter in your life. Here's to unforgettable memories, warm hugs, and dreams that come true. Happy Birthday!",
+    message: "Wishing you a day filled with joy, a heart full of laughter, and a life overflowing with love — not just today, but every single day. 💖 You deserve all the happiness in the world, and I hope this birthday marks the beginning of yet another amazing chapter in your life. Here's to unforgettable memories📝, warm hugs🫂, and dreams that come true🌉. Happy Birthday!",
     media: "/images/memory1.jpg",
     type: "image",
   },
@@ -14,17 +14,17 @@ const cards = [
     type: "image",
   },
   {
-    message: "We stitched the words ‘Together Since 2018’ into hoodies, hoping to wear them side by side. Life had other plans — but that one photo, with both lying next to each other, feels like our hearts still kept the promise. 🥹🥹",
+    message: "Remember! We stitched the words ‘Together Since 2018’ into hoodies, hoping to wear them side by side. Life had other plans — but that one photo, with both lying next to each other, feels like our hearts still kept the promise. 🥹🥹",
     media: "/images/memory12.jpg",
     type: "image",
   },
   {
-    message: "It wasn’t the car, it wasn’t a fancy place — it was just us, tiffin, and an Activa parked on the roadside. That night, our laughter turned a misunderstanding into one of our most beautiful memories. 🥹🥹",
+    message: "Remember that night when your parents weren’t home and we planned to have dinner together? Because of my silly misunderstanding, we ended up eating on the Activa, standing at the corner of the road. But somehow… that pulao tasted different — warmer, more special — because we were together. That simple moment became one of the most precious memories for me. And honestly, I still find myself wishing for a night like that again. A night with just us. I don’t know what the future holds, but I do know this — I want to live all of it with you. 🥹💖",
     media: "/images/memory13.jpg",
     type: "image",
   },
   {
-    message: "One bowl of Maggi — made not out of hunger, but out of love, care, and my silly zidd. I made a fuss like a child, and she made Maggi like a best friend. That night, I realized… it wasn’t the taste that mattered, it was her. I wasn’t really hungry — I just needed a little extra love. 🥹🥹",
+    message: "That one time, just because of my zidd, you made Maggi for me. I wasn’t really hungry — I just wanted to trouble you a little… and deep down, I just needed a little extra love. And that bowl of Maggi? I’ll never forget it. Maybe it was the way you made it, or maybe it was just you — but I’ve never had Maggi that tasted that good, ever. 🥹💖",
     media: "/images/memory14.jpg",
     type: "image",
   },
